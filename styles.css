@@ -1,0 +1,151 @@
+body {
+    font-family: Courier New;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  color: #9400D3;
+}
+h5 {
+    margin-bottom: 20px;
+    text-align: center;
+    color:#DC143C;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color:  #FF1493;
+    color:#fff ;
+}
+
+tfoot {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.month-title {
+    margin-top: 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Highlighting variance column */
+.variance {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    form {
+        font-size: 0.9em;
+    }
+
+    input, button {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    table {
+        min-width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+}
